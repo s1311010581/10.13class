@@ -1,0 +1,54 @@
+关于搭建前端开发环境的作业
+
+由于在早期的学习中电脑便装上了google chrome游览器，因此本次搭建环境的过程中也就不用再去安装了;
+
+安装JavaScript运行时—Node:
+在谷歌搜索https://nodejs.org/zh-cn/下载Node的长期支持版，在关闭防火墙的情况下安装Node
+
+出现以下界面
+
+ [外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-VuLha9JB-1601165527459)(C:\Users\41359\AppData\Roaming\Typora\typora-user-images\image-20200925180018789.png)]
+
+接着按win+r调出运行cmd。在运行框中输入node -v查看node.js的版本。再输出nmp -v查看nmp版本说明此时nmp和node均已安装成功。我选择默认安装在C盘的Programfiles文件夹中，因此我在我的目录中找到以下内容
+
+[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-HrXIT1JR-1601165527461)(C:\Users\41359\AppData\Roaming\Typora\typora-user-images\image-20200925180034088.png)]
+
+我想将我全模块的所在路径和缓存路径放在我的node,js安装的文件夹中，我便在我默认安装的文件夹nodejs文件夹下创建node_cache文件和node_modules两个文件夹
+
+[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-ocroGFWF-1601165527463)(C:\Users\41359\AppData\Roaming\Typora\typora-user-images\image-20200925180045920.png)]
+
+创建完两个文件夹之后打开cmd命令窗输入
+
+npm config set prefix 和pm config set cache 加node_global和node_cache文件路径
+
+[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-M7cUq6K2-1601165527465)(C:\Users\41359\AppData\Roaming\Typora\typora-user-images\image-20200925180054361.png)]
+
+接下来配置环境变量
+
+在用户变量中添加[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-AIVzNnCb-1601165527467)(C:\Users\41359\AppData\Roaming\Typora\typora-user-images\image-20200925180117646.png)]
+
+在系统变量中添加
+
+[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-t5PVLh0g-1601165527469)(C:\Users\41359\AppData\Roaming\Typora\typora-user-images\image-20200925180103786.png)]
+
+目录就是node_modules文件目录
+
+```
+接下来再次打开cmd窗口输入npm install express -g
+尝试安装第一个模块:express模块
+12
+```
+
+[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-Jmll6gs2-1601165527471)(C:\Users\41359\AppData\Roaming\Typora\typora-user-images\image-20200925180135447.png)]
+
+安装express模块
+
+重新安装visual studio code，因为以前在学习C++以及实训中有使用到过这个软件所以，先下载好中文插件更换语言然后便下载一些较新且使用的插件安装然后尝试写一些简单的代码试着运行环境。
+
+下载GIT
+
+在https://git-scm.com/download/win找到最新版64位git并下载，将visual studio code为默认编辑器。
+
+打开visual studio code尝试在新装的环境下运行一些小的程序
+
+最后下载typora编写第一篇Markdown文档博客并上传至新建好账号的GIThub上。
